@@ -1,0 +1,20 @@
+﻿<UserControl x:Name="Button" x:Class="mrAllamehProject.ButtonMaterial"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    
+    <Grid Grid.Row="1" Grid.ColumnSpan="2"  >
+
+        <Border BorderThickness="1"  CornerRadius="4,4,4,4" Background="#FF29488B"   />
+        <Label x:Name="lable" Style="{DynamicResource mainStyleLable}" FontWeight="Normal" FontSize="11"   Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <Label.Content>
+                <Binding ElementName="LableContent" Path="."></Binding>
+            </Label.Content>
+
+        </Label>
+
+    </Grid>
+</UserControl>
